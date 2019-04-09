@@ -4,7 +4,14 @@ class Anagram
   
   attr_accessor :match
   
-  def initialize
+  @@test []
+  
+  def initialize (test)
+    @@test << test 
+  end 
+  
+  def detect.match
+    new_array = @@test.split("")   
     
   end 
 end 
