@@ -2,15 +2,16 @@
 
 class Anagram
   
-  attr_accessor :match
+  attr_accessor :test
   
-  @@test []
+  @@test
+  anagram = []
   
   def initialize (test)
-    @@test << test 
+    @@test = test 
   end 
   
-  def detect.match
+  def match ()
     new_array = @@test.split("")   
     
   end 
