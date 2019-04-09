@@ -11,8 +11,14 @@ class Anagram
     @@test = test 
   end 
   
-  def match ()
-    new_array = @@test.split("")   
-    
+  def match (find_anagram)
+    find_anagram.find_all do |same| 
+      if same.split(""). sort == @@test.sort 
+        same 
+      end 
+    end 
   end 
 end 
+
+listen = anagram.new("listen")
+listen.match(%w())
